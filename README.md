@@ -1,61 +1,83 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Karang Taruna Profile Website with Admin Panel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is a web-based information system for **Karang Taruna**, designed to present organizational information, programs, and activities to the public, while providing an admin panel for content management.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🎯 Key Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* **Dynamic Content Management**
+  Admins can perform *CRUD* (Create, Read, Update, Delete) operations on Programs, News, Gallery, and Organizational Structure.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* **Responsive Public Pages**
 
-## Learning Laravel
+  * Display About Us (Vision & Mission), Organizational Structure, Programs & Activities, Photo Gallery, and Latest News.
+  * Modern and responsive design using **Tailwind CSS**.
+  * Smooth animations with **AOS (Animate On Scroll)**.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* **User Interactivity**
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+  * Contact form for visitors to send messages.
+  * *Lightbox* feature in the gallery for image enlargement.
+  * Social media sharing buttons on program and news detail pages.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* **Functional Admin Panel**
 
-## Laravel Sponsors
+  * Interactive dashboard showing summarized data.
+  * Collapsible sidebar for easy navigation.
+  * Structured content management for all main sections.
+  * **User authentication using Laravel Breeze**, providing secure login, registration, and password management.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* **Website Settings**
+  Admins can update basic website information such as Site Name, Logo, Address, Contact, and social media links through the admin panel.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 👥 User Roles
 
-## Contributing
+### 1. Admin
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* Manage all website content (Programs, News, Gallery, Organizational Structure, etc.).
+* Manage general website settings.
+* View messages received from the contact form.
+* Full access to all admin panel features.
+* Login using **Laravel Breeze authentication system**.
 
-## Code of Conduct
+### 2. Visitors (Public)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* View all information displayed on the main pages.
+* Send messages through the contact form.
+* View program and news details.
+* Explore archives of programs, news, and gallery pages with pagination.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 📦 System Flow
 
-## License
+1. **Initial Setup**
+   Admin configures basic website information, such as site name, logo, and contact details, through the **Website Settings** menu.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2. **Content Management**
+   Admin adds, edits, or deletes data such as Organizational Members, Programs, Gallery, and News through their respective menus in the admin panel.
+
+3. **Public Display**
+   Data managed by the admin is automatically displayed on the main pages and related pages for visitors.
+
+4. **Visitor Interaction**
+   Visitors can send messages through the contact form, which are stored under **Incoming Messages** in the admin panel.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Backend:** Laravel 12 + **Breeze (Authentication)**
+* **Frontend:**
+
+  * *Blade* (Laravel templating engine)
+  * **Tailwind CSS**
+  * **Alpine.js** (for interactivity)
+  * **AOS (Animate On Scroll)** (for animations)
+* **Database:** MySQL
+
+---
+
