@@ -46,7 +46,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
-// Semua rute admin masuk ke grup ini
+// semua rute admin masuk ke grup ini
 Route::middleware(['auth', 'verified'])
     ->prefix('admin')
     ->name('admin.')
